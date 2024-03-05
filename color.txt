@@ -1,0 +1,2 @@
+#256fb9 color1
+#107be5 color2
