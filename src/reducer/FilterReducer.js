@@ -1,10 +1,17 @@
 const FilterReducer = (state, action) => {
   switch (action.type) {
     case "LOAD_FILTER_PRODUCTS":
+      let priceArr = action.payload.map((curelm) => curelm.price);
+      let maxPrice = Math.max(...priceArr);
       return {
         ...state,
         filter_products: [...action.payload],
         all_products: [...action.payload],
+        filters: {
+          ...state.filters,
+          price: maxPrice,
+          maxPrice,
+        },
       };
     case "SET_GRID_VIEW":
       return { ...state, grid_view: true };
@@ -35,6 +42,49 @@ const FilterReducer = (state, action) => {
       };
       newSortData = tempSortProduct.sort(sortingProducts);
       return { ...state, filter_products: newSortData };
+
+    case "UPDATE_FILTER_VALUE":
+      const { name, value } = action.payload;
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          [name]: value,
+        },
+      };
+    case "FILTER_PRODUCTS":
+      const { all_products } = state;
+      let tempFilterProduct = [...all_products];
+      const { text, category, company, color, price } = state.filters;
+      if (text) {
+        tempFilterProduct = tempFilterProduct.filter((curelmt) => {
+          return curelmt.name.toLowerCase().includes(text);
+        });
+      }
+      if (category !== "all") {
+        tempFilterProduct = tempFilterProduct.filter((curelmt) => {
+          return curelmt.category === category;
+        });
+      }
+      if (company !== "all") {
+        tempFilterProduct = tempFilterProduct.filter((curelmt) => {
+          return curelmt.company === company;
+        });
+      }
+      if (color !== "all") {
+        tempFilterProduct = tempFilterProduct.filter((curelmt) => {
+          return curelmt.colors.includes(color);
+        });
+      }
+      if (price) {
+        tempFilterProduct = tempFilterProduct.filter((curelmt) => {
+          return curelmt.price <= price;
+        });
+      }
+      return {
+        ...state,
+        filter_products: tempFilterProduct,
+      };
 
     default:
       return state;
