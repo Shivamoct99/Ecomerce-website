@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { useFilterContext } from "../context/Filtercontext";
 import { FaCheck } from "react-icons/fa";
 import FormatPrice from "../Helpers/FormatPrice";
-
+import { Button } from "../Styles/Button";
 const FilterSection = () => {
   const {
     all_products,
-    filters: { text, category, color, price, maxPrice, minPrice },
+    filters: { text, category, company, color, price, maxPrice, minPrice },
     updateFilterValue,
+    clearFilter,
   } = useFilterContext();
 
   const getUnequeData = (data, attr) => {
@@ -62,8 +63,9 @@ const FilterSection = () => {
           <select
             name="company"
             id="company"
+            value={company}
             className="filter-company--select"
-            onClick={updateFilterValue}
+            onChange={updateFilterValue}
           >
             {companyData.map((curElem, index) => {
               return (
@@ -101,6 +103,7 @@ const FilterSection = () => {
                 value={curColor}
                 name="color"
                 style={{ backgroundColor: curColor }}
+                onClick={updateFilterValue}
                 className={color === curColor ? "btnStyle active" : "btnStyle"}
               >
                 {color === curColor ? <FaCheck className="checkStyle" /> : null}
@@ -123,6 +126,9 @@ const FilterSection = () => {
           value={price}
           onChange={updateFilterValue}
         />
+      </div>
+      <div className="btnstyle">
+        <Button onClick={clearFilter}>Clear Filter</Button>
       </div>
     </Wrapper>
   );
