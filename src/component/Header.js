@@ -7,7 +7,7 @@ function Header() {
   return (
     <MainHeader>
       <Link to="/">
-        <img src="./images/logo.png" alt="" />
+        <img className="logo" src="./images/logo.png" alt="" />
       </Link>
       <Nav />
     </MainHeader>
@@ -23,6 +23,7 @@ const MainHeader = styled.header`
   position: relative;
 
   .logo {
+    width: 20rem;
     height: 5rem;
   }
 `;

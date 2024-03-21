@@ -2,6 +2,7 @@ import React from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const CartAmountToggle = ({ amount, setIncrease, setDecrease }) => {
+  // console.log(setIncrease);
   return (
     <div className="cart-button">
       <div className="amount-toggle">
