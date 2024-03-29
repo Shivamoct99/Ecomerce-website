@@ -1,6 +1,8 @@
+import { useAuth0 } from "@auth0/auth0-react";
 import styled from "styled-components";
 
 function Contact() {
+  const { isAuthenticated, user } = useAuth0();
   return (
     <Wrapper>
       <h2 className="common-heading">Contact page</h2>
@@ -15,12 +17,17 @@ function Contact() {
       ></iframe>
       <div className="container">
         <div className="contact-form">
-          <form action="https://formspree.io/f/mwkgvjal" method="POST" className="contact-inputs">
+          <form
+            action="https://formspree.io/f/mwkgvjal"
+            method="POST"
+            className="contact-inputs"
+          >
             <input
               type="text"
               className="text"
               name="UserName"
               placeholder="Enter UserName"
+              value={isAuthenticated ? user.name : ""}
               required
               autoComplete="off"
             />
@@ -29,6 +36,7 @@ function Contact() {
               className="Email"
               name="Email"
               placeholder="Enter Email"
+              value={isAuthenticated ? user.email : ""}
               required
               autoComplete="off"
             />

@@ -4,11 +4,13 @@ import reducer from "../reducer/CartReducer";
 const CartContext = createContext();
 const GetMethod = () => {
   let data = localStorage.getItem("Cart");
-  if (data === []) {
-    return [];
-  } else {
-    return JSON.parse(data);
-  }
+  // if (data === []) {
+  //   return [];
+  // } else {
+  //   return JSON.parse(data);
+  // }
+  const parsedDate = JSON.parse(data) || [];
+  return parsedDate;
 };
 
 const initialState = {
