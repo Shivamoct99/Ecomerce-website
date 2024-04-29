@@ -23,7 +23,7 @@ const MainHeader = styled.header`
   position: relative;
 
   .logo {
-    width: 20rem;
+    width: 15rem;
     height: 5rem;
   }
 `;

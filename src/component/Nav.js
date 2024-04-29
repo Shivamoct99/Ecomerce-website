@@ -64,7 +64,7 @@ function Nav() {
             </li>
           ) : (
             <li>
-              <Button onClick={() => loginWithRedirect()}>Log In</Button>{" "}
+              <Button onClick={() => loginWithRedirect()}>Log In</Button>
             </li>
           )}
           <li>
@@ -170,6 +170,14 @@ const Wrapper = styled.nav`
     padding: 0.8rem 1.4rem;
   }
 
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    .navbar-lists {
+      gap: 1.8rem;
+      button{
+       padding: 0.8rem 1.4rem;
+      }
+     
+  }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .mobile-navbar-btn {
       display: inline-block;

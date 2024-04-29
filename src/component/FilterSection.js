@@ -185,7 +185,7 @@ const Wrapper = styled.section`
   }
 
   .filter-color-style {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
   }
 
