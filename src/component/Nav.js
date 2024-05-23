@@ -14,11 +14,11 @@ function Nav() {
   return (
     <Wrapper>
       <div className={menuIcon ? "navbar active" : "navbar"}>
-        <ul className="navbar-lists">
+        <ul className="navbar-lists ">
           <li>
             <Link
               to="/"
-              className="navbar-link"
+              className="navbar-link "
               onClick={() => setmenuIcon(false)}
             >
               Home
@@ -51,7 +51,14 @@ function Nav() {
               Contact
             </Link>
           </li>
-          {isAuthenticated && <p className="user-login--name">{user.name}</p>}
+          {/* {isAuthenticated && <p className="user-login--name">{user.name}</p>} */}
+          {isAuthenticated && (
+            <img
+              className="user-login--img"
+              src={user.picture}
+              alt={user.name}
+            ></img>
+          )}
           {isAuthenticated ? (
             <li>
               <Button
@@ -149,7 +156,7 @@ const Wrapper = styled.nav`
       width: 2.4rem;
       height: 2.4rem;
       position: absolute;
-      background-color: #000;
+      // background-color: #000;
       color: #000;
       border-radius: 50%;
       display: grid;
@@ -163,6 +170,11 @@ const Wrapper = styled.nav`
   .user-login--name {
     text-transform: capitalize;
     font-size: 1.4rem;
+  }
+  .user-login--img{
+    width: 5rem;
+    height: 5rem;
+    border-radius:50%;
   }
 
   .user-logout,
@@ -230,7 +242,7 @@ const Wrapper = styled.nav`
       transform: translateX(0);
       z-index: 999;
       transform-origin: right;
-      transition: all 3s linear;
+      transition: all 0.5s linear;
 
       .navbar-link {
         font-size: 4.2rem;

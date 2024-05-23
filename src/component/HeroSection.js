@@ -16,8 +16,8 @@ const HeroSection = ({ myData }) => {
               atque temporibus veniam doloribus libero ad error omnis voluptates
               animi! Suscipit sapiente.
             </p>
-            <Link to="/">
-              <Button>show now</Button>
+            <Link to="/product">
+              <Button>shop now</Button>
             </Link>
           </div>
           {/* our homepage image  */}
@@ -73,7 +73,8 @@ const Wrapper = styled.section`
       content: "";
       width: 60%;
       height: 80%;
-      background-color: rgba(81, 56, 238, 0.4);
+      // background-color: rgba(81, 56, 238, 0.4);
+      background-color: ${({ theme }) => theme.colors.helper};
       position: absolute;
       left: 50%;
       top: -5rem;

@@ -35,16 +35,24 @@ const Sort = () => {
           <select
             name="sort"
             id="sort"
-            className="sort-selectiom--style"
+            className="sort-selection--style"
             onChange={sorting}
           >
-            <option value="lowest">Price(lowest)</option>
-            <option value="#" disabled></option>
-            <option value="highest">Price(highest)</option>
-            <option value="#" disabled></option>
-            <option value="a-z">Price(a-z)</option>
-            <option value="#" disabled></option>
-            <option value="z-a">Price(z-a)</option>
+            <option className="sort-select--option" value="lowest">
+              Price(lowest)
+            </option>
+            {/* <option className="sort-select--option" value="#" disabled></option> */}
+            <option className="sort-select--option" value="highest">
+              Price(highest)
+            </option>
+            {/* <option className= "sort-select--option"value="#" disabled></option> */}
+            <option className="sort-select--option" value="a-z">
+              Price(a-z)
+            </option>
+            {/* <option className= "sort-select--option"value="#" disabled></option> */}
+            <option className="sort-select--option" value="z-a">
+              Price(z-a)
+            </option>
           </select>
         </form>
       </div>
@@ -86,7 +94,6 @@ const Wrapper = styled.section`
       padding: 0.5rem 0;
       cursor: pointer;
       height: 2rem;
-      padding: 10px;
     }
   }
 `;

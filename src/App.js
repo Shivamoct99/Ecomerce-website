@@ -18,7 +18,8 @@ export default function App() {
       text: "rgba(29 ,29, 29, .8)",
       white: "#fff",
       black: " #212529",
-      helper: "#8490ff",
+      helper: "rgb(98 84 243)",
+      // helper: "#8490ff",
 
       bg: "#F6F8FA",
       // bg: "#107be5",

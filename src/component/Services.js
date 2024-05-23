@@ -11,8 +11,8 @@ const Services = () => {
         <div className="grid grid-three-column">
           <div className="services-1">
             <div>
-            <TbTruckDelivery className="icon" />
-            <h3>Super Fast And Free Delivery</h3>
+              <TbTruckDelivery className="icon" />
+              <h3>Super Fast And Free Delivery</h3>
             </div>
           </div>
           <div className="services-2">
@@ -21,7 +21,7 @@ const Services = () => {
                 <MdSecurity className="icon" />
                 <h3>Non-Contact Shipping</h3>
               </div>
-              </div>
+            </div>
             <div className="services-colum-2">
               <div>
                 <GiReceiveMoney className="icon" />
@@ -31,8 +31,8 @@ const Services = () => {
           </div>
           <div className="services-3">
             <div>
-            <RiSecurePaymentLine className="icon" />
-            <h3>Super Secure Payment System</h3>
+              <RiSecurePaymentLine className="icon" />
+              <h3>Super Secure Payment System</h3>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const Wrapper = styled.section`
   }
 
   .services-2 {
-    gap: 4rem;
+    gap: 2rem;
     background-color: transparent;
     box-shadow: none;
 
@@ -76,14 +76,15 @@ const Wrapper = styled.section`
       align-items: center;
       border-radius: 2rem;
       box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+      padding: 0.5rem 0;
 
-      div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-      }
+      // div {
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   align-items: center;
+      //   gap: 1rem;
+      // }
     }
   }
 
