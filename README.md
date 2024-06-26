@@ -19,7 +19,7 @@ Product Filtering and Sorting
 Responsive Design
 
 ### Technologies Used
-The application is built using the following technologies:
+#### The application is built using the following technologies:
 
 React Js 
 
