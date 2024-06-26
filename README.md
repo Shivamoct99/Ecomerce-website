@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# E-Comerce web page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed Link : [View Webapp](https://ecomerce-website-three.vercel.app/)
 
-## Available Scripts
+#### Sharma Store is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, JavaScript and React.
 
-In the project directory, you can run:
+## This is a web page with the following features:
 
-### `npm start`
+User authentication 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Product search functionality
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Shopping Cart
 
-### `npm test`
+Product Details Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Product Filtering and Sorting
 
-### `npm run build`
+Responsive Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Technologies Used
+The application is built using the following technologies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React Js 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Auth 0
 
-### `npm run eject`
+Style Component
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Steps to start the app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Here are some pictures of the web application:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Home page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot (15)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/82536903-98dd-4ef0-bc45-e84890422659)
 
-### Code Splitting
+### Features section 
+![Screenshot (16)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/9f33896d-e4ca-4ac0-ab2b-aad179182e39)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Terms Conditions
+![Screenshot (17)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/9e181e6e-429d-4c45-b38a-fad3e78e27da)
 
-### Analyzing the Bundle Size
+### Footer section
+![Screenshot (18)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/6a816472-e6cd-48c4-a7d5-9592a5c0fcff)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Product List Page
+![Screenshot (19)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/8919e19b-727e-41f8-bfc6-45e6a787e8e2)
 
-### Making a Progressive Web App
+### Filter section
+![Screenshot (20)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/d7c9d963-da20-4eb5-9dd7-c40e93661b45)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Single Product 
+![Screenshot (29)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/b7185855-df6a-4788-87a0-00fd5d16aff6)
 
-### Advanced Configuration
+### Contact page
+![Screenshot (21)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/8f45665d-fcae-4d32-9bbd-e67b65f24847)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Cart Page
+![Screenshot (24)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/123fb0d2-57e9-4191-894a-397d1a164916)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot (25)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/8af46ab5-9d8c-4dd9-b3c5-6313e989b99b)
