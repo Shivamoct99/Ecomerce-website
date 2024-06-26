@@ -18,8 +18,8 @@ Product Filtering and Sorting
 
 Responsive Design
 
-### Technologies Used
-#### The application is built using the following technologies:
+## Technologies Used
+### The application is built using the following technologies:
 
 React Js 
 
@@ -58,6 +58,8 @@ Style Component
 
 ### Contact page
 ![Screenshot (21)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/8f45665d-fcae-4d32-9bbd-e67b65f24847)
+
+![Screenshot (22)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/5d1d5266-801c-46cf-a62a-89d53d54d0ff)
 
 ### Cart Page
 ![Screenshot (24)](https://github.com/Shivamoct99/Ecomerce-website/assets/107253104/123fb0d2-57e9-4191-894a-397d1a164916)
